@@ -1,0 +1,42 @@
+<html>
+<head>
+    <title>My Translator</title>
+    <h1> Words to Sign Translator </h1>
+</head>
+<p>Original Text: <b>{{ originalText }}</b></p>
+
+<b>Translated Image Below::</b>
+<br/>
+{% for i in range(0, len) %}
+    <img src="{{ imagepath[i] }}" alt="This is a image" width="100px" height="100px" class="imagePath"/>
+{% endfor %}
+
+<form method="POST">
+    <input type="submit" class="btn btn-success" class="btn" width="100px" name="try" value="Try Again">
+</form>
+
+<p>
+</p>
+</body>
+</html>
+<style>
+    .imagePath {
+        margin-left: 3px;
+    }
+
+    h1 {
+        text-align: center;
+        text-decoration-color: aqua;
+    }
+
+    .btn {
+
+        padding: 15px 50px;
+        text-align: center;
+        text-decoration: none;
+        display: block;
+        font-size: 16px;
+        margin-right: auto;
+        background-color: aquamarine;
+    }
+</style>
